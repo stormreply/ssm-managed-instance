@@ -25,6 +25,12 @@ variable "key_name" {
   default     = null
 }
 
+variable "name" {
+  type        = string
+  description = "Instance name"
+  default     = null # will be set in locals
+}
+
 variable "policies" {
   type        = list(string)
   description = "List of IAM policy ARNs to attach to the instance"
@@ -53,12 +59,6 @@ variable "subnet_id" {
   type        = string
   description = "Id of the subnet to create this instance in"
   default     = null
-}
-
-variable "tag_name" {
-  type        = string
-  description = "Instance name"
-  default     = null # will be set in locals
 }
 
 variable "user_data" {
