@@ -13,7 +13,7 @@ variable "detailed_monitoring" {
   default     = true
 }
 
-variable "instance_name" {
+variable "tag_name" {
   type        = string
   description = "Instance name"
   default     = null # will be set in locals

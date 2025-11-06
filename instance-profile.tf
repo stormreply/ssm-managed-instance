@@ -1,10 +1,10 @@
 resource "aws_iam_instance_profile" "instance" {
-  name = local.instance_name
+  name = local.tag_name
   role = aws_iam_role.instance.name
 }
 
 resource "aws_iam_role" "instance" {
-  name               = local.instance_name
+  name               = local.tag_name
   assume_role_policy = data.aws_iam_policy_document.client_assume_role.json
 }
 
