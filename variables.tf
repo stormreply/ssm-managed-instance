@@ -13,15 +13,6 @@ variable "detailed_monitoring" {
   default     = true
 }
 
-variable "fake_dependencies" {
-  type        = list(any)
-  description = <<-EOD
-    Fake dependencies. These are needed in case the module is used as a child module depending
-    on other resources.
-  EOD
-  default     = []
-}
-
 variable "instance_type" {
   type        = string
   description = "Instance type"
