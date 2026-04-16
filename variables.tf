@@ -13,6 +13,12 @@ variable "detailed_monitoring" {
   default     = true
 }
 
+variable "fake_dependencies" {
+  type        = any
+  description = "Fake dependencies"
+  default     = "Fake dependencies"
+}
+
 variable "instance_type" {
   type        = string
   description = "Instance type"
