@@ -14,9 +14,9 @@ variable "detailed_monitoring" {
 }
 
 variable "fake_dependencies" {
-  type        = any
+  type        = list(any)
   description = "Fake dependencies"
-  default     = "Fake dependencies"
+  default     = []
 }
 
 variable "instance_type" {
