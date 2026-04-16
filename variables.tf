@@ -15,7 +15,10 @@ variable "detailed_monitoring" {
 
 variable "fake_dependencies" {
   type        = list(any)
-  description = "Fake dependencies"
+  description = <<-EOD
+    Fake dependencies. These are needed in case the module is used as a child module depending
+    on other resources.
+  EOD
   default     = []
 }
 
