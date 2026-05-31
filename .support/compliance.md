@@ -8,15 +8,12 @@ following set of rules:
 
 - The `required_version` of Terraform in the terraform block must be >= 1
 
-- There must be a file called `./assets/architecture.drawio`
-
-- The `README.md` must preserve all text that is not between the markers
-  `<!-- BEGIN_REPLACE -->` and `<!-- END_REPLACE -->` in the reference
+- The `README.md` must preserve all text that is not between the replace
+  markers `<!-- BEGIN_REPLACE` and `END_REPLACE -->` in the reference
   `README.md`
 
-- All `<!-- BEGIN_REPLACE -->` and `<!-- END_REPLACE -->` markers in
-  `README.md` must have been removed, and the text within these markers
-  must have been modified
+- All replace markers in `README.md` must have been removed, and the text
+  within these markers must have been modified
 
 - The `README.md` must contain all section names that are in the reference
   `README.md`, and in the same order.
