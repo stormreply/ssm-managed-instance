@@ -5,12 +5,12 @@ variable "ami" {
 }
 
 variable "dependencies" {
-  type = list(any)
+  type        = list(any)
   description = <<-EOD
     A list of dependencies to objects of any type. This variable is a workaround for
     _depends_on_, which won't work because the module defines its own provider.
   EOD
-  default = []
+  default     = []
 }
 
 variable "detailed_monitoring" {

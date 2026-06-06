@@ -92,6 +92,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input__metadata"></a> [\_metadata](#input\_\_metadata) | Select metadata passed from GitHub Workflows | <pre>object({<br/>    actor      = string # Github actor (deployer) of the deployment<br/>    catalog_id = string # SLT catalog id of this module<br/>    deployment = string # slt-<catalod_id>-<repo>-<actor><br/>    ref        = string # Git reference of the deployment<br/>    ref_name   = string # Git ref_name (branch) of the deployment<br/>    repo       = string # GitHub short repository name (without owner) of the deployment<br/>    repository = string # GitHub full repository name (including owner) of the deployment<br/>    sha        = string # Git (full-length, 40 char) commit SHA of the deployment<br/>    short_name = string # slt-<catalog_id>-<actor><br/>    time       = string # Timestamp of the deployment<br/>  })</pre> | <pre>{<br/>  "actor": "",<br/>  "catalog_id": "",<br/>  "deployment": "",<br/>  "ref": "",<br/>  "ref_name": "",<br/>  "repo": "",<br/>  "repository": "",<br/>  "sha": "",<br/>  "short_name": "",<br/>  "time": ""<br/>}</pre> | no |
 | <a name="input_ami"></a> [ami](#input\_ami) | AMI (Id) to use for the instance | `string` | `null` | no |
+| <a name="input_dependencies"></a> [dependencies](#input\_dependencies) | A list of dependencies to objects of any type. This variable is a workaround for<br/>\_depends\_on\_, which won't work because the module defines its own provider. | `list(any)` | `[]` | no |
 | <a name="input_detailed_monitoring"></a> [detailed\_monitoring](#input\_detailed\_monitoring) | Flag for detailed monitoring. Make sure to understand cost/benefit relationship.<br/>Check: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-detailed-monitoring.html | `bool` | `true` | no |
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | Instance type | `string` | `"t3.medium"` | no |
 | <a name="input_key_name"></a> [key\_name](#input\_key\_name) | Key pair name to use | `string` | `null` | no |
@@ -110,7 +111,8 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output__slt_config"></a> [\_slt\_config](#output\_\_slt\_config) | Map of SLT configuration |
-| <a name="output_instance"></a> [instance](#output\_instance) | n/a |
+| <a name="output_dependencies"></a> [dependencies](#output\_dependencies) | The list of (pseudo) dependencies being passed to the module. |
+| <a name="output_instance"></a> [instance](#output\_instance) | The SSM-managed instance being created. |
 <!-- END_TF_DOCS -->
 
 </details>
