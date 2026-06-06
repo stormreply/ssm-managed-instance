@@ -1,14 +1,14 @@
 # SLT - SSM-Managed Instance
 
+An EC2 instance with _AmazonSSMManagedInstanceCore_ policy included in
+its profile, allowing to connect to the instance securely via AWS SSM's
+Session Manager.
+
 [![Check](https://github.com/stormreply/ssm-managed-instance/actions/workflows/check.yaml/badge.svg)](https://github.com/stormreply/ssm-managed-instance/actions/workflows/check.yaml)
 [![Plan](https://github.com/stormreply/ssm-managed-instance/actions/workflows/plan.yaml/badge.svg)](https://github.com/stormreply/ssm-managed-instance/actions/workflows/plan.yaml)
 [![Apply](https://github.com/stormreply/ssm-managed-instance/actions/workflows/apply.yaml/badge.svg)](https://github.com/stormreply/ssm-managed-instance/actions/workflows/apply.yaml)
 [![Test](https://github.com/stormreply/ssm-managed-instance/actions/workflows/test.yaml/badge.svg)](https://github.com/stormreply/ssm-managed-instance/actions/workflows/test.yaml)
 [![Destroy](https://github.com/stormreply/ssm-managed-instance/actions/workflows/destroy.yaml/badge.svg)](https://github.com/stormreply/ssm-managed-instance/actions/workflows/destroy.yaml)
-
-An EC2 instance with _AmazonSSMManagedInstanceCore_ policy included in
-its profile, allowing to connect to the instance securely via AWS SSM's
-Session Manager.
 
 #### Storm Library for Terraform
 
