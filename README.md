@@ -1,3 +1,4 @@
+### Storm Library for Terraform
 # SLT - SSM-Managed Instance
 
 An EC2 instance with _AmazonSSMManagedInstanceCore_ policy included in
@@ -9,8 +10,6 @@ Session Manager.
 [![Apply](https://github.com/stormreply/ssm-managed-instance/actions/workflows/apply.yaml/badge.svg)](https://github.com/stormreply/ssm-managed-instance/actions/workflows/apply.yaml)
 [![Test](https://github.com/stormreply/ssm-managed-instance/actions/workflows/test.yaml/badge.svg)](https://github.com/stormreply/ssm-managed-instance/actions/workflows/test.yaml)
 [![Destroy](https://github.com/stormreply/ssm-managed-instance/actions/workflows/destroy.yaml/badge.svg)](https://github.com/stormreply/ssm-managed-instance/actions/workflows/destroy.yaml)
-
-#### Storm Library for Terraform
 
 This repository is a member of the SLT | Storm Library for Terraform,
 a collection of Terraform modules for Amazon Web Services. The focus
@@ -47,10 +46,8 @@ it often serves as controller host, supporting the deployment flow where
 Terraform can't, or as an instance for interacting with and exploring of
 resources of a demo.
 
-## Terraform Docs
-
 <details>
-<summary>Click to show</summary>
+<summary><h2>Terraform Docs</h2></summary>
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
