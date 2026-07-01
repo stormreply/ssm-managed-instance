@@ -1,5 +1,5 @@
 ### Storm Library for Terraform
-# SLT - SSM-Managed Instance
+# SSM-Managed Instance
 
 An EC2 instance with _AmazonSSMManagedInstanceCore_ policy included in
 its profile, allowing to connect to the instance securely via AWS SSM's
